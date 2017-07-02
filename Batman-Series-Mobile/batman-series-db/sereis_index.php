@@ -1,0 +1,1 @@
+<?php header( 'Location: /series_index.html' ) ;  ?>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Batsite</title>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   <link rel="stylesheet" href="./bootstrap.css" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://use.fontawesome.com/df9ecf4b5a.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#top_nav").hover($(this).css("background-color","red"));
+        });
+    </script>
+    
+</head>
+
+<body id="batman_body">
+    <div class="fullscreen-bg container-fluid">
+                <video autoplay muted loop class="fullscreen-bg__video">
+                    <source src="./smoke.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+   
+    <nav class="navbar navbar-inverse" style="background-color: transparent" >
+
+  <div class="container-fluid" >
+
+    <div class="navbar-header" style="background-color: transparent">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+      <a class="navbar-brand" href="./index.html"><img class="img-responsive" src="./Batlogo.png" 
+      style="width:90px;height:30px;margin:auto auto" /></a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav">
+        <li ><a id="link1" href="./index.html" >HOME</a></li>
+        <li ><a id="link2" href="./series_index.html" >SERIES</a></li>
+        <li ><a id="link3" href="./character_index.html" >CHARACTERS</a></li>
+       
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    
+    
+    <div class="container-fluid content-fluid">
+        <h2 style="margin:0 20px">Batman Forever (1992)</h2>
+         <br/>
+        <img id="movie_img" src="./batman_forever.png"  width="300vw" height="400vw" style="margin:0 20px">
+            <div class="row content-fluid container-fluid">
+               
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 content-fluid" style="margin:auto auto">
+                
+                </div>
+
+                <br/>
+                <br/>
+                <br/>
+
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-fluid">
+                    <div class="panel panel-default container-fluid content-fluid">
+                         <div class="panel-body container-fluid">
+                             <h3><b>"Joel Schumacher breaks Tim Burton's dark taste!"</b></h3>
+
+                            <div> 
+                             <p><b>Year: 1995</b></p>
+                             <p><b>Director: Joel Schumacher</b></p>
+                             <p><b>Starring: Val Kilmer(<a href="./characters/batman_1995.html">Batman</a>/<a href="./characters/bruce_wayne_1995.html">Bruce Wayne</a>), 
+                                Chris O'Donnell(<a href="./characters/dick_grayson.html">Dick Grayson</a>/<a href="./characters/robin.html">Robin</a>), 
+                                Nicole Kidman(<a href="./characters/dr_chase_meridian.html">Dr.Chase Meridian</a>),
+                                Tommy Lee Jones(<a href="./characters/harvey_dents.html">Harvey Dents</a>/<a href="./characters/two_face.html">Two-face</a>),
+                                Jim Carey(<a href="./characters/edward_nygma.html">Edward Nygma</a>/<a href="./characters/the_riddler.html">The Riddler</a>)</b></p>
+                             <p><b>Plot: 
+                                Batman must battle Two-Face and The Riddler with help from an amorous psychologist and a young circus acrobat
+                                 who becomes his sidekick, Robin.
+                             </b></p>
+                             
+                            </div>
+
+                            </div>
+                             
+                        </div>
+                             </div>
+        </div>
+    </div>
+
+    <div id="footer container-fluid content-fluid">
+<footer class="container-fluid" style="position:bottom" >
+      <p style="text-align:center; color:white"><strong>Copyright© 2017 JAE HYUK OH </strong></p>
+   </footer>
+</div>
+
+    
+</body>
+
+</html>
