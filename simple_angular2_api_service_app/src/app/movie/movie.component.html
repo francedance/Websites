@@ -1,0 +1,26 @@
+<h2>Open Movie Database</h2>
+<div class="col-md-8 col-md-offset-2">
+  <div class="form-group">
+    <input type="text" 
+          required [(ngModel)]="mv_Title" 
+          class="form-control" 
+          placeholder="Enter Movie name ..."><br><button class="btn btn-primary" type="submit" (click)="callMovieService()">Search!</button>
+  </div>
+          <br><br>
+          <h3>Movie Details</h3>
+          <br>
+          <p *ngIf="(this.mv_Plot)" class="well lead">
+            <i>Title: </i> <span>{{this.mv_Title}}</span> <br>
+            <img src= {{this.mv_Poster}}> <br>
+            <i>Genre: </i> <span>{{this.mv_Genre}}</span> <br>
+            <i>Rated: </i> <span>{{this.mv_Rated}}</span> <br>
+            <i>Released: </i> <span>{{this.mv_Released}}</span> <br>
+            <i>Directed by: </i> <span>{{this.mv_Director}}</span> <br>
+            <i>Characters/Actors: </i> <br> <li *ngFor="let cast of this.mv_Actors">{{cast['character']}}: {{cast['name']}}<br></li>
+            <i>Plot: </i> <span>{{this.mv_Plot}}</span> <br>
+            <i>Link: </i> <a href= {{this.mv_Link}} >Movie Link</a> <br>
+          </p>
+          <p class="text-info">Total # of all the service requests including Weather, Movie, and Currency is :
+            <span class="badge">{{this._sharedService.totReqsMade}}</span>
+          </p>
+  </div>

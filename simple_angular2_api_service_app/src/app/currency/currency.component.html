@@ -1,0 +1,18 @@
+<h2>Currency Exchange Rates</h2>
+<div class="col-md-8 col-md-offser-2">
+  <div class="form-group">
+    <input type="text" [(ngModel)]="base_currency" 
+           class="form-control" 
+           placeholder="Enter Base Currency Symbol. Example: GBP(, AUD, INR)...">
+
+    <br><button class="btn btn-primary" type="submit" (click)="callCurrencyService()">Look For Currency Rates</button>
+    <br><br>
+    <h3>Rate Details</h3>
+    <br>
+    <p *ngIf="this.my_result" class="well lead">Exchange rates relative to {{this.base_currency.toUpperCase()}} :</p>
+      {{this.my_result}}
+    <p class="text-info">Total # of all the service requests including Weather, Movie, and Currency is : 
+      <span class="badge">{{this._sharedService.totReqsMade}}</span>
+    </p>
+  </div>
+</div>

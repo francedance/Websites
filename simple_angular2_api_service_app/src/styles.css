@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: black;
+}
+
+p, div {
+    color: white;
+}
+
+div div div div {
+    border: 1px solid white;
+}
+
+h2 , h3 {
+    color: white;
+}
